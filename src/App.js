@@ -1,9 +1,9 @@
 import './App.css';
-import TicTacToe from './components/ticTacToe/TicTacToe';
+import TicTacToe from './components/TicTacToe';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <TicTacToe/>
     </div>
   );

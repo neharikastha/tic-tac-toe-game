@@ -1,0 +1,65 @@
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.board {
+  position: relative;
+  width: 320px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  margin: 0 auto 20px;
+}
+
+.reset {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.winning-line {
+  position: absolute;
+  height: 8px;
+  background-color: rgb(0, 0, 0);
+  transform-origin: left center;
+  transition: all 0.3s ease;
+}
+
+.line-0 { top: 50px; left: 0; width: 100%; }
+.line-1 { top: 160px; left: 0; width: 100%; }
+.line-2 { top: 270px; left: 0; width: 100%; }
+
+.line-3 { top: 0; left: 50px; width: 100%; transform: rotate(90deg); }
+.line-4 { top: 0; left: 160px; width: 100%; transform: rotate(90deg); }
+.line-5 { top: 0; left: 270px; width: 100%; transform: rotate(90deg); }
+
+.line-6 {
+  top: 0;
+  left: 0;
+  width: 141%;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+}
+
+.line-7 {
+  top: 0;
+  right: 0;
+  width: 141%;
+  transform: rotate(-45deg);
+  transform-origin: 100% 0;
+}
